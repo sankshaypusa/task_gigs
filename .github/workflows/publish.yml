@@ -19,8 +19,8 @@ jobs:
             - run: npm install
             - run: npm run build
             - run: |
-                 echo @sankshaypusa:https://npm.pkg.github.com/> /Users/sankshay/Downloads/E-commerceplatform_using_typescript/server/9-jobber-shared/src/.npmrc
-                 echo //npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> /Users/sankshay/Downloads/E-commerceplatform_using_typescript/server/9-jobber-shared/src/.npmrc
+                 echo @sankshaypusa:https://npm.pkg.github.com/> build/npmrc
+                 echo //npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
             - run: npm publish
               working-directory: ./build
               env:
